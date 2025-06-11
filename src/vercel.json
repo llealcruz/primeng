@@ -6,7 +6,7 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist/primeng",
-        "installCommand": "npm install --legacy-peer-deps --force",
+        "installCommand": "npm install --legacy-peer-deps --force --no-audit",
         "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider npm run build"
       }
     }
