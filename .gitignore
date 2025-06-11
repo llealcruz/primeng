@@ -7,10 +7,9 @@
 /components
 /resources
 /aot
-dist
 
 # dependencies
-**/node_modules
+/node_modules
 
 # IDEs and editors
 /.idea
@@ -20,7 +19,13 @@ dist
 *.launch
 .settings/
 *.sublime-workspace
-/.vscode
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # misc
 /.sass-cache
@@ -30,7 +35,14 @@ dist
 npm-debug.log
 testem.log
 /typings
-.angular
+
+# themes
+/src/assets/components/themes/**/*.css
+/src/assets/components/themes/**/*.map
+!/src/assets/components/themes/bootstrap/theme.css
+!/src/assets/components/themes/nova-*/theme.css
+!/src/assets/components/themes/luna-*/theme.css
+!/src/assets/components/themes/rhea/theme.css
 
 # e2e
 /e2e/*.js
@@ -38,14 +50,4 @@ testem.log
 
 # System Files
 .DS_Store
-**/.DS_Store
 Thumbs.db
-
-# type doc
-api-generator/typedoc.json
-api-generator/themedoc.json
-.vercel
-.nx
-
-# primeng packages
-packages/primeng/src/package.json
